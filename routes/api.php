@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ClientesController as ClientesController;
-use App\Http\Controllers\PlanosController as ProdutosController;
+use App\Http\Controllers\PlanosController as PlanosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('clientes', ClientesController::class);
-Route::resource('produtos', PlanoController::class);
+Route::resource('planos', PlanosController::class);
